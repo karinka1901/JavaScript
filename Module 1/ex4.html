@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise 4</h1>
+    <script>
+
+        let max = 4;
+        let min = 1;
+
+        let name = window.prompt('Enter your name:');
+        let number = Math.random() * (max - min) + min;
+        // document.write(number);
+            if (number >= 1 && number <= 2) {
+                document.write(name + ", you are Ravenclaw.");
+                document.write("<br>");
+            }
+            else if (number >= 2 && number <= 3) {
+                document.write(name + ", you are Gryffindor.");
+                document.write("<br>");
+            }
+            else if (number >= 3 && number <= 4) {
+                document.write(name + ", you are Slytherin.");
+                document.write("<br>");
+            }
+            else if (number >= 4) {
+                document.write(name + ", you are Hufflepuff.");
+                document.write("<br>");
+            }
+    </script>
+</body>
+</html>
