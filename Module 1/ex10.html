@@ -7,18 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercise 7</h1>
+    <h1>Exercise 10</h1>
     <script>
-            let number = parseInt(prompt("How many times would you like to roll the dice?"));
-            let sum = 0;
+
+        let number = parseInt(prompt("How many times would you like to roll the dice?"));
+        let dice = parseInt(prompt("Guess the sum: "));
+        let sum = 0;
+        
+        for (let a =0; a<=10000; a++){
             for (let i = 1; i<= number; i++) {
                 let dice = (Math.floor(Math.random() * 6) + 1); 
-                document.write("The result in the roll number " + i + " is " + dice);
-                document.write("<br>");
                 sum = sum + dice;
-            }
+                break;
+                }
+            document.write("The dice was rolled " + number+ " times");
             document.write("<br>");
             document.write("The sum is: " + sum);
+            
+        }
     </script>
 </body>
 </html>
+
