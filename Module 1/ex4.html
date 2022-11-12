@@ -14,21 +14,22 @@
         let min = 1;
 
         let name = window.prompt('Enter your name:');
-        let number = Math.random() * (max - min) + min;
-        // document.write(number);
-            if (number >= 1 && number <= 2) {
+        // let number = Math.random() * (max - min) + min;
+        let number = (Math.floor(Math.random() * 4) + 1); //Returns a random integer from 1 to 4
+        document.write(number);
+            if (number == 1) {
                 document.write(name + ", you are Ravenclaw.");
                 document.write("<br>");
             }
-            else if (number >= 2 && number <= 3) {
+            else if (number == 2 ) {
                 document.write(name + ", you are Gryffindor.");
                 document.write("<br>");
             }
-            else if (number >= 3 && number <= 4) {
+            else if (number == 3) {
                 document.write(name + ", you are Slytherin.");
                 document.write("<br>");
             }
-            else if (number >= 4) {
+            else if (number == 4) {
                 document.write(name + ", you are Hufflepuff.");
                 document.write("<br>");
             }
