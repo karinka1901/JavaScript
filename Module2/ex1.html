@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise 1</h1>
+    <script>
+
+        let list = [];
+        let newList = [6,7,9,7,5];
+
+        for (let i = 0; i < 5; i++) {
+            let number = parseInt(prompt("Enter a number:"));
+            list.push(number);
+        }
+        document.write(list);
+        document.write("<br>");
+        document.write(list[2]);
+        document.write("<br>");
+        document.write(list.length);
+        
+        for(let j = 4; j <= list.length; j--) {
+            document.write("<br>");
+            document.write(list[j]);
+        }
+  
+
+
+    </script>
+    
+</body>
+</html>

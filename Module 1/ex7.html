@@ -13,12 +13,12 @@
             let sum = 0;
             for (let i = 1; i<= number; i++) {
                 let dice = (Math.floor(Math.random() * 6) + 1); 
-                document.write("The result in the roll number " + i + " is " + dice);
+                document.write(`The result in the roll number ${i} is ${dice}.`);
                 document.write("<br>");
                 sum = sum + dice;
             }
             document.write("<br>");
-            document.write("The sum is: " + sum);
+            document.write(`The sum is: ${sum}.`);
     </script>
 </body>
 </html>
