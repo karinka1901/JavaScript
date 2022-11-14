@@ -11,6 +11,7 @@
     <script>
 
         let list = [];
+        let newList = [];
         
         for (let i = 0; i < 5; i++) {
             let number = parseInt(prompt("Enter a number:"));
@@ -18,14 +19,11 @@
         }
         document.write(list);
         document.write("<br>");
-        document.write(list[2]);
-        document.write("<br>");
-        document.write(list.length);
         
-        for(let j = 4; j <= list.length; j--) {
-            document.write("<br>");
-            document.write(list[j]);
+        for(let j = 4; j >= 0; j--) {
+            newList.push(list[j]);
         }
+        document.write(newList);
   
 
 
