@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise 3</h1>
+    <ul id = "dogs"></ul>
+    <script>
+
+        let dogs = [];
+        let list = document.getElementById("dogs");
+
+        
+        for (let i = 0; i < 6; i++) {
+            let name = window.prompt("Enter the name of a dog:");
+            dogs.push(name);
+        }
+        dogs.sort();
+        dogs.reverse();
+
+        for (i = 0; i < dogs.length; ++i) {  //prints in an unordered list to the web page
+            var li = document.createElement('li');
+            li.innerText = dogs[i];
+            list.appendChild(li);
+            }
+
+    </script>
+    
+</body>
+</html>
