@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise 6</h1>
+    <ul id = "dice"></ul>
+    <script>
+        function rollDice() {
+            rolledNum = [];
+            let list = document.getElementById("dice");
+            
+            while (true) {
+            let dice = (Math.floor(Math.random() * 6) + 1);
+                if (dice == 6) {
+                    for (i = 0; i < rolledNum.length; ++i) { 
+                        var li = document.createElement('li');
+                        li.innerText = rolledNum[i];
+                        list.appendChild(li); 
+                    }
+                    break;
+                }
+                else {
+                    rolledNum.push(dice);
+                }  
+            }
+        }
+       
+        rollDice();
+    
+    </script>
+    
+</body>
+</html>
