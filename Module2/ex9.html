@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise 9</h1>
+    <script>
+        function even(numbers) {
+            let evenNum = [];
+            for (let i = 0; i< numbers.length; i++) {
+                if (numbers[i] % 2 == 0) {
+                    evenNum.push(numbers[i]);
+                }
+            }
+            return evenNum;
+        }
+        // let list = [2, 7, 9, 4];
+        even(list);
+        let list = [2, 7, 9, 4];
+        for (let i = 0; i< numbers.length; i++) {
+            document.write(list[i]);
+        }
+
+    </script>
+</body>
+</html>
+
+
+Write a function called even(), which receives an array containing numbers as a parameter. 
+The function returns a second (usually smaller) array which has the even numbers of the original array. 
+The function must not make changes to the original table. (3p)
+Example: In a three-item array, there are items 2, 7 and 4. The function returns a two-item array with items 2 and 4.
+Print both the original array and the new array to the console in the main program after you have called the function.
+You can hardcode the array, no need for prompt().
