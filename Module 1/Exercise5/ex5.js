@@ -4,7 +4,7 @@ document.write("</br>");
 
 let year = parseInt(prompt("Enter the year:"));
 
-if (year % 4 == 0 || year % 100 == 0 && year % 400) {
+if (year % 4 === 0 || year % 100 === 0 && year % 400) {
     document.write(`${year} is a leap year`);
 }
 else {
