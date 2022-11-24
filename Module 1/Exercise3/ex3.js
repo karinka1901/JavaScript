@@ -1,5 +1,5 @@
 'use strict';
-document.write("EXERCISE 5");
+document.write("EXERCISE 3");
 document.write("</br>");
 
 let a = +prompt("Enter first number:");
