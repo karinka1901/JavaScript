@@ -6,7 +6,7 @@ let list = [];
 let newList = [];
 
 for (let i = 0; i < 5; i++) {
-    let number = parseInt(prompt("Enter a number:"));
+    let number = parseInt(prompt("Enter a number:" ));
     list.push(number);
 }
 document.write(list);

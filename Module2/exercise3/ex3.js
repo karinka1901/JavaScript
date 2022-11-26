@@ -2,8 +2,8 @@ let dogs = [];
         let list = document.getElementById("dogs");
 
         
-        for (let i = 0; i < 6; i++) {
-            let name = window.prompt("Enter the name of a dog:");
+        for (let i = 1; i <= 6; i++) {
+            let name = window.prompt("Enter the name of a dog number" + i);
             dogs.push(name);
         }
         dogs.sort();

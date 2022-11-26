@@ -19,5 +19,5 @@ function rollDice(sides) {
     return;
 }
 
-let sides = parseInt(prompt("Enter a number:"));
+let sides = parseInt(prompt("Enter the number of sides on the dice:"));
 rollDice(sides);
