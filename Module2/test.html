@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src =''></script>
+    <title>10</title>
+</head>
+<body>
+    <h1>Exercise 10</h1>
+    <script>
+        let listOfnames = [];
+        let candidates = [];
+        let number = parseInt(prompt("Enter the number of candidates:"));
+        for (let i = 1; i <= number; i++) {
+            let names = prompt("Enter the name of the candidate number " + i);
+            //listOfnames.push(names);
+            listOfnames[i] = new Object();
+            listOfnames[i]['name'] = names;
+            listOfnames[i]['votes'] = 0;
+            candidates.push(listOfnames);
+        }
+        //creates objects and adds them to an array
+        
+        // });
+        console.log(candidates); 
+
+        let votersNum = parseInt(prompt("Enter the number of voters:"));
+        for (let j = 1; j <= votersNum; j++) {
+            let namesVotes = prompt("Who would you like to vote for?");
+            for (let a = 0; a < listOfnames.length; a++){
+                if (namesVotes === candidates[a]['name']){
+                    candidates[a]['votes'] += 1;
+                }
+                else {
+                    candidates[a]['votes'] += 0;
+                }
+            }
+        }
+        //sorts the objects
+        candidates.sort((a, b) =>  {
+        return b.votes - a.votes;
+        });
+        //results
+        console.log("The winner is " + candidates[0].name + " with " + candidates[0].votes + " votes!");
+        console.log("RESULTS:");
+        for(let c = 0; c < candidates.length; c++){
+            console.log(`${candidates[c].name}: ${candidates[c].votes} votes.`);
+        }
+    </script>
+</body>
+</html>
