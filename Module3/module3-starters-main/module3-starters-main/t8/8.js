@@ -1,32 +1,29 @@
 const button = document.querySelector('button');
 const p = document.querySelector('#result');
-const input = document.querySelector('input');
-const option = document.querySelector('option');
+const select = document.querySelector("#operation");
 
 
-input.addEventListener('oninput', onInput);
+
 button.addEventListener('click', options);
 
-function onInput(){
-    a = input.value;
-    document.p.innerHTML=a;
-}
-
-
 function options() {
-    if (option.value === 'add'){
+    var a = parseInt(document.querySelector('#num1').value);
+    var b = parseInt(document.querySelector('#num2').value);
+ 
+
+    if (select.value === 'add'){
         let result = a + b;
         p.innerHTML = result;
     }
-    if (option.value === 'sub'){
+    if (select.value ==='sub'){
         let result = a - b;
         p.innerHTML = result;
     }
-    if (option.value === 'multi'){
+    if (select.value === 'multi'){
         let result = a * b;
         p.innerHTML = result;
     }
-    if (option.value === 'div'){
+    if (select.value === 'div'){
         let result = a / b;
         p.innerHTML = result;
     } 
